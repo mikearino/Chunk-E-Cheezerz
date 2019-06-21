@@ -24,6 +24,7 @@ PizzaConstructor.prototype.priceCheck = function () {
   } else if (combinedSizeToppings === 6) {
     $('#output').text('5,000 dollars')
   }
+  return combinedSizeToppings
 }
 //user logic
 //creates new pizza object and captures it in the var
@@ -43,7 +44,20 @@ $(document).ready(function () {
     var order = new PizzaConstructor(pizzaToppings, pizzaSize)
     //this adds a pizza from the constructor
     pizzaContainer.addOrder(order)
+
+    var attampt = pizzaContainer.forEach(function(one){
+      console.log("yes")
+    })
     var getPrice = pizzaContainer.za[0].priceCheck()
+    // var getPrice = pizzaContainer.za[1].priceCheck()
+    // var getPrice = pizzaContainer.za[2].priceCheck()
+    // var getPrice = pizzaContainer.za[3].priceCheck()
+    // var getPrice = pizzaContainer.za[4].priceCheck()
+
+     // var getPrice = pizzaContainer.za.forEach(function(one) {
+     // pizzaContainer.za.priceCheck()
+     // });
+
     console.log(getPrice)
     console.log(pizzaSize)
     console.log(pizzaToppings)
