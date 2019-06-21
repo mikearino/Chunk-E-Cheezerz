@@ -1,12 +1,12 @@
-# Pig Latin Translator
+# Pizza Shack
 
-#### A webpage created to Pig Latin sentence from a plain English sentence. 6/12/2019
+#### A webpage created for ordering pizza. 6/21/2019
 
 #### By **Mike Lofgren**
 
 ## Description
 
-A webpage created with jQuery, CSS and HTML to translate an English sentence to a Pig Latin sentence.
+A webpage created with jQuery, CSS and HTML to order different kinds of Pizza.
 This webpage utilizes jQuery with switch statements and CSS styles for hide and show.
 A user inputs a sentence without numbers or special characters.
 It runs the input through the back end logic and returns a sentence of Pig Latin from a plain English sentence.
