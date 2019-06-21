@@ -37,10 +37,10 @@ It runs the input through the back end logic and returns a sentence of Pig Latin
 
 ## Support and contact details
 
-If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.com 
+If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.com
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*This software is licensed under the MIT license*
 
-Copyright (c) 2017 **Mike Lofgren**
+Copyright (c) 2019 **Mike Lofgren**
