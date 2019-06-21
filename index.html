@@ -12,15 +12,23 @@
       <div class="jumbotron">
         <h1>Welcome to Pizza Shack!</h1>
       </div>
-      <h2>Choose your size and toppings!</h2>
+      <h2>Choose your size and toppings</h2>
         <form id="new-form">
           <div class="form-group">
             <label for="new-label">Size</label>
-            <input type="text"  class="form-control" id="size">
+            <select class="form-control" id="size">
+              <option value="1">Small</option>
+              <option value="2">Medium</option>
+              <option value="3">Large</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="new-label">Toppings</label>
-            <input type="text"  class="form-control" id="toppings">
+            <select class="form-control" id="toppings">
+              <option value="1">Cheese</option>
+              <option value="2">Pepperoni</option>
+              <option value="3">Combo</option>
+            </select>
           </div>
           <button type="submit" class="btn-primary">Add</button>
         </form>

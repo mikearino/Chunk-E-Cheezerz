@@ -6,7 +6,7 @@ function Pizza() {
   this.za = [];
 }
 
-Pizza.prototype.addPizza = function (input) {
+Pizza.prototype.addOrder = function (input) {
   this.za.push(input);
 }
 
@@ -15,24 +15,25 @@ function PizzaConstructor(toppings, size) {
   this.size = size;
 }
 
-
-
-
-
-
-
-
-
-
 //user logic
+//creates new pizza object and ccaptures it in the var
 var pizzaContainer = new Pizza();
 $(document).ready(function () {
   $("form#new-form").submit(function (event) {
     event.preventDefault();
+    //this captures toppngs
     var pizzaToppings = $("#toppings").val();
     var pizzaSize = $("#size").val();
-    console.log(pizzaToppings,pizzaSize);
-    $("#show-input").text(pizzaFromInput);
-    var order = new PizzaConstructor(pizzaContainer)
+    //this shows inputs to dom
+    $("#show-input").text(pizzaToppings);
+    $("#show-input").text(pizzaSize);
+    //this creates a new pizza and puts it into variable called order
+    var order = new PizzaConstructor(pizzaToppings, pizzaSize)
+    //this adds a pizza from the constructor
+    pizzaContainer.addOrder(order)
+    console.log(pizzaSize)
+    console.log(pizzaToppings)
+    console.log(pizzaContainer.toppings)
+    console.log(pizzaContainer.size)
   });
 });
