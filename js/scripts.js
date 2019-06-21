@@ -39,6 +39,8 @@ $(document).ready(function () {
     $("#show-input").text(pizzaSize);
     var order = new PizzaConstructor(pizzaToppings, pizzaSize);
     pizzaContainer.addOrder(order);
+
+
     var getPrice = pizzaContainer.za[0].priceCheck();
     var getPrice = pizzaContainer.za[1].priceCheck();
     var getPrice = pizzaContainer.za[2].priceCheck();
