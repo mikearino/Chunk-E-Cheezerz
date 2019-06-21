@@ -12,9 +12,9 @@ A user selects pizza prices from a menu and it outputs the price.
 It runs the input through the back end logic with a simple method and returns a price.
 
 ### Specs
-| Spec                         Input|     Output          |                          |
+| Spec                         Input|     Output          |                         |
 | :-------------------------------- | :------------------ | :---------------------- |
-|user selects small and cheese     | small, cheese        |3.99 what a deal           |
+|user selects small and cheese     | small, cheese        |3.99 what a deal         |
 |user selects medium and pepperoni | medium, peperoni     |4.99 wowzers             |
 |user selects large and combo      |large, combo          |5,0000 dollars!          |
 
