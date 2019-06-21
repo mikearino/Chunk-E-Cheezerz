@@ -15,15 +15,20 @@ function PizzaConstructor(toppings, size) {
   this.size = size;
 }
 
+PizzaConstructor.prototype.priceCheck = function () {
+  var combinedSizeToppings = this.toppings + this.size;
+  console.log(combinedSizeToppings)
+}
 //user logic
 //creates new pizza object and ccaptures it in the var
 var pizzaContainer = new Pizza();
 $(document).ready(function () {
   $("form#new-form").submit(function (event) {
     event.preventDefault();
-    //this captures toppngs
-    var pizzaToppings = $("#toppings").val();
-    var pizzaSize = $("#size").val();
+    //this captures toppngs/size
+    var pizzaToppings = parseInt($("#toppings").val());
+    var pizzaSize = parseInt($("#size").val());
+
     //this shows inputs to dom
     $("#show-input").text(pizzaToppings);
     $("#show-input").text(pizzaSize);
@@ -35,5 +40,6 @@ $(document).ready(function () {
     console.log(pizzaToppings)
     console.log(pizzaContainer.toppings)
     console.log(pizzaContainer.size)
+
   });
 });
