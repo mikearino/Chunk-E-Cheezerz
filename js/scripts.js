@@ -17,6 +17,13 @@ function PizzaConstructor(toppings, size) {
 
 PizzaConstructor.prototype.priceCheck = function () {
   var combinedSizeToppings = this.toppings + this.size;
+  if (combinedSizeToppings >= 2 && <=4) {
+    $('#output').text('3.99 what a deal')
+  } else if (combinedSizeToppings === 5 ) {
+    $('#output').text('4.99 wowzers')
+  } else if (combinedSizeToppings === 6) {
+    $('#output').text('5,000 dollars')
+  }
   console.log(combinedSizeToppings)
 }
 //user logic
@@ -36,6 +43,7 @@ $(document).ready(function () {
     var order = new PizzaConstructor(pizzaToppings, pizzaSize)
     //this adds a pizza from the constructor
     pizzaContainer.addOrder(order)
+    var getPrice = pizzaContainer.za[o].priceCheck()
     console.log(pizzaSize)
     console.log(pizzaToppings)
     console.log(pizzaContainer.toppings)
