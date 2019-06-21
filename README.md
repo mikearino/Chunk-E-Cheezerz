@@ -7,23 +7,23 @@
 ## Description
 
 A webpage created with jQuery, CSS and HTML to order different kinds of Pizza.
-This webpage utilizes jQuery with switch statements and CSS styles for hide and show.
-A user inputs a sentence without numbers or special characters.
-It runs the input through the back end logic and returns a sentence of Pig Latin from a plain English sentence.
+This webpage utilizes jQuery with a switch statement and Objects.
+A user selects pizza prices from a menu and it outputs the price.
+It runs the input through the back end logic with a simple method and returns a price.
 
 ### Specs
-| Spec                  Input|     Output          |                          |
-| :------------------------- | :------------------ | :---------------------- |
-| User input is 1, returns I | 1                   | I                       |
-|User input is 5, returns V  | 5                   | V                       |
-
+| Spec                         Input|     Output          |                          |
+| :-------------------------------- | :------------------ | :---------------------- |
+|user selects small and cheese     | small, cheese        |3.99 what a deal           |
+|user selects medium and pepperoni | medium, peperoni     |4.99 wowzers             |
+|user selects large and combo      |large, combo          |5,0000 dollars!          |
 
 ## Setup/Installation Requirements
 
 1. To run this program, clone repository from this GitHub.
 2. Open file in a web browser such as Google Chrome.
-3. Type an English sentence without numbers or special characters and click the "Translate!" button.
-4. It tells you a Pig Latin sentence based on your plain English.
+3. Select options from the dropdown menu and click Add.
+4. It tells you the price of your pizza.
 5. The bootstrap file should be under "css" folder of project and jQuery file should be under "js" directory.
 
 ## Known Bugs

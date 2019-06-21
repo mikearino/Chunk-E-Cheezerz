@@ -1,4 +1,6 @@
-body {
- background-image: url(media/ninja.jpeg);
- 
+body{
+    background-image:url('../media/ninja.jpeg');
+    background-attachment:fixed;
+    background-repeat: repeat;
+    background-size: 50
 }
