@@ -12,11 +12,15 @@ A user selects pizza prices from a menu and it outputs the price.
 It runs the input through the back end logic with a simple method and returns a price.
 
 ### Specs
-| Spec                         Input|     Output          |                         |
+| Spec                              |  Input           |      Output                     |
 | :-------------------------------- | :------------------ | :---------------------- |
-|user selects small and cheese     | small, cheese        |3.99 what a deal         |
-|user selects medium and pepperoni | medium, peperoni     |4.99 wowzers             |
-|user selects large and combo      |large, combo          |5,0000 dollars!          |
+|user selects small/any topping/any sauce     | small/ any topping/ any sauce       |6.00 dollars      |
+|user selects medium/pepperoni/any sauce | medium/peperoni/any sauce     |10.00 dollars           |
+|user selects medium/cheese/any sauce | medium/cheese/any sauce     |10.00 dollars           |
+|user selects medium/combo/any sauce | medium/combo/any sauce     |13.00 dollars           |
+|user selects large/ cheese/ any sauce      |large/cheese/any sauce          |15.00 dollars          |
+|user selects large/ pepperoni/ any sauce      |large/pepperoni/any sauce          |15.00 dollars          |
+|user selects large/ combo/ any sauce      |large/combo/any sauce          |18.00 dollars          |
 
 ## Setup/Installation Requirements
 
