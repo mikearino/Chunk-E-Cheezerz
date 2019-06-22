@@ -45,3 +45,27 @@ function Pizza(size, toppings, sauce) {
 Pizza.prototype.fullName = function () {
   return this.size + ' ' + this.toppings;
 };
+
+//User interface logic ------
+var newPizza = new NewPie();
+
+function displayPizzaDetails(pizzaToDisplay) {
+  var pizzaList = $("ul#pizzas");
+  var htmlForPizzaInfo = "";
+  pizzaToDisplay.pizzas.forEach(function(pizza) {
+    htmlForPizzaInfo += "<li id=" + pizza.id + ">" + pizza.size + " " + pizza.toppings + " " + pizza.sauce + "</li>";
+  })
+  pizzaList.html(htmlForPizzaInfo);
+};
+
+$(document).ready(function () {
+  $("form#new-pizza").submit(function (event) {
+    event.preventDefault();
+    var inputtedSize = $("input#new-size").val();
+    var inputtedToppings = $("input#new-toppings").val();
+    var inputtedSauce = $("input#new-sauce").val();
+    var pizzaCreated = new Pizza(inputtedSize, inputtedToppings, inputtedSauce);
+    newPizza.addPizza(pizzaCreated);
+    displayPizzaDetails(newPizza);
+  })
+})
