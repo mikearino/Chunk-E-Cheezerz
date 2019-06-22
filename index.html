@@ -10,42 +10,49 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Welcome to Pizza Shack</h1>
+      <h1>Welcome to Chunky Cheezers!</h1>
     </div>
-    <h2>Choose your size and toppings</h2>
-    <form id="new-pizza">
-      <select class="form-control" id="new-size">
-        <option value="Small">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-      </select>
 
-      <select class="form-control" id="new-toppings">
-        <option value="Cheese">Cheese</option>
-        <option value="Pepperoni">Pepperoni</option>
-        <option value="Combo">Combo</option>
-      </select>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2>Choose your size and toppings!</h2>
+          </div>
+        </div>
 
-      <select class="form-control" id="new-sauce">
-        <option value="with red sauce">Red</option>
-        <option value="with white sauce">White</option>
-        <option value="with fry sauce">Fry Sauce</option>
-      </select>
-      <button type="submit">Add</button>
-    </form>
+        <form id="new-pizza">
+          <select class="form-control" id="new-size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
 
-    <h2>Pizzas:</h2>
-    <ul id="pizzas">
-    </ul>
+          <select class="form-control" id="new-toppings">
+            <option value="Cheese">Cheese</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Combo">Combo</option>
+          </select>
 
-    <!-- <div id="show-pizza">
-      <p>Size: <span class="size"></span></p>
-      <p>Toppings: <span class="toppings"></span></p>
-      <p>Sauce: <span class="sauce"></span></p>
-      <div id="buttons">
+          <select class="form-control" id="new-sauce">
+            <option value="with red sauce">Red</option>
+            <option value="with white sauce">White</option>
+            <option value="with fry sauce">Fry Sauce</option>
+          </select>
+            <button class="btn btn-secondary" type="submit">Add</button>
+        </form>
       </div>
-    </div> -->
-
-  </div>
-</body>
-</html>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Pizzas:</h2>
+          </div>
+          <div class="panel-body">
+            <ul id="pizzas">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
