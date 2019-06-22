@@ -8,3 +8,7 @@ body{
 #show-pizza {
   display: none;
 }
+
+li {
+  font-size: 25px;
+}
